@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SustainIQ — See. Solve. Sustain.</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--nav:#0b1a3a;--bg:#f3f5f9;--card:#fff;--tx:#0f172a;--mu:#64748b;--bd:#e5e9f0;--blue:#2563eb;--teal:#0d9488;--lime:#84cc16;--amb:#f59e0b;--red:#ef4444;--ai:#7c3aed;--aibg:#f5f0ff;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1122;--card:#111b33;--tx:#e8edf7;--mu:#94a3b8;--bd:#22304f;--aibg:#1c1537;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a1122;--card:#111b33;--tx:#e8edf7;--mu:#94a3b8;--bd:#22304f;--aibg:#1c1537;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}body{margin:0;font:14px/1.45 Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);display:flex;min-height:100vh}
+aside{width:236px;background:var(--nav);color:#c7d2e8;padding:14px 10px;display:flex;flex-direction:column;gap:2px;transition:width .25s;position:sticky;top:0;height:100vh;overflow-y:auto;flex-shrink:0}
+aside.c{width:62px}aside.c .lb{display:none}
+.logo{display:flex;align-items:center;gap:10px;padding:6px 8px 14px;color:#fff;font-weight:700;font-size:17px}
+.logo i{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--blue),var(--teal));display:grid;place-items:center;font-style:normal;flex-shrink:0}
+.grp{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#6d7fa6;padding:12px 10px 4px}
+aside.c .grp{visibility:hidden}
+.nv{all:unset;cursor:pointer;display:flex;gap:10px;align-items:center;padding:8px 10px;border-radius:9px;font-size:13px}
+.nv:hover{background:#ffffff14}.nv.on{background:#ffffff22;color:#fff}.nv span:first-child{width:18px;text-align:center}
+.see{color:#5eead4}.sol{color:#93c5fd}.sus{color:#bef264}
+main{flex:1;min-width:0;display:flex;flex-direction:column}
+header{display:flex;gap:10px;align-items:center;padding:12px 24px;background:var(--card);border-bottom:1px solid var(--bd);flex-wrap:wrap;position:sticky;top:0;z-index:5}
+header input,header select,.btn{font:inherit;color:var(--tx);background:var(--bg);border:1px solid var(--bd);border-radius:9px;padding:7px 10px}
+header input{width:200px}.sp{flex:1}
+.btn{cursor:pointer}.btn.p{background:var(--blue);color:#fff;border-color:var(--blue)}
+.av{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--blue));color:#fff;display:grid;place-items:center;font-weight:600;font-size:12px}
+.bell{position:relative}.bell b{position:absolute;top:-5px;right:-5px;background:var(--red);color:#fff;border-radius:9px;font-size:10px;padding:0 5px}
+.wrap{padding:22px 24px;max-width:1400px;width:100%;animation:in .35s ease}
+@keyframes in{from{opacity:0;transform:translateY(8px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.bc{color:var(--mu);font-size:12px}h1{margin:2px 0 4px;font-size:24px}
+.sim{display:inline-block;background:var(--aibg);color:var(--ai);border-radius:6px;padding:1px 7px;font-size:11px;font-weight:600}
+.grid{display:grid;gap:14px}.k6{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.cd{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:16px;transition:transform .2s,box-shadow .2s}
+.cd.h:hover{transform:translateY(-3px);box-shadow:0 10px 24px #0f172a1a}
+.cd h3{margin:0 0 10px;font-size:14px;display:flex;justify-content:space-between;align-items:center}
+.kl{color:var(--mu);font-size:12px;display:flex;justify-content:space-between}.kv{font-size:27px;font-weight:700;margin:4px 0}
+.up{color:#16a34a}.dn{color:var(--red)}.mu{color:var(--mu);font-size:12px}
+.sss{color:#fff;border:0}.sss ul{margin:8px 0 0;padding:0;list-style:none}.sss li{display:flex;justify-content:space-between;padding:6px 0;border-top:1px solid #ffffff30}.sss li b{font-size:18px}
+.s1{background:linear-gradient(135deg,#0f766e,#0d9488)}.s2{background:linear-gradient(135deg,#1d4ed8,#3b82f6)}.s3{background:linear-gradient(135deg,#4d7c0f,#84cc16);color:#10230a}.s3 li{border-color:#00000025}
+table{width:100%;border-collapse:collapse}th{text-align:left;color:var(--mu);font-weight:500;font-size:12px;cursor:pointer;padding:8px;border-bottom:1px solid var(--bd);white-space:nowrap}
+td{padding:10px 8px;border-bottom:1px solid var(--bd)}tr.r{cursor:pointer}tr.r:hover td{background:var(--bg)}
+.ov{overflow-x:auto}.pill{padding:2px 9px;border-radius:99px;font-size:11px;font-weight:600}
+.ok{background:#dcfce7;color:#166534}.wn{background:#fef3c7;color:#92400e}.rk{background:#fee2e2;color:#991b1b}.in{background:#dbeafe;color:#1e40af}
+.bar{height:6px;background:var(--bd);border-radius:9px;overflow:hidden;min-width:70px}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--teal),var(--lime));transition:width .8s}
+.chip{cursor:pointer;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:99px;padding:4px 11px;font:inherit;font-size:12px}.chip.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.ai{background:var(--aibg);border:1px dashed var(--ai);border-radius:12px;padding:12px;margin-bottom:8px}.ai small{color:var(--ai);font-weight:600}
+.fi{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--bd)}.dot{width:8px;height:8px;border-radius:50%;margin-top:6px;flex-shrink:0}
+#so{position:fixed;right:0;top:0;bottom:0;width:min(420px,100%);background:var(--card);border-left:1px solid var(--bd);box-shadow:-12px 0 30px #0003;transform:translateX(105%);transition:transform .3s;padding:22px;z-index:20;overflow-y:auto}#so.o{transform:none}
+#nt{position:absolute;right:24px;top:58px;width:300px;display:none;z-index:9}#nt.o{display:block}
+.sk{background:linear-gradient(90deg,var(--bd),var(--bg),var(--bd));background-size:200%;animation:sh 1s infinite;border-radius:8px;height:60px}@keyframes sh{to{background-position:-200%}}
+svg text{fill:var(--mu);font-size:10px}
+#sp{position:fixed;inset:0;z-index:99;background:radial-gradient(circle at 30% 20%,#13306b,#0b1a3a 60%,#06101f);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;transition:opacity .6s,visibility .6s}#sp.x{opacity:0;visibility:hidden}
+#sp .lg{width:78px;height:78px;border-radius:22px;background:linear-gradient(135deg,var(--blue),var(--teal));display:grid;place-items:center;font-size:38px;animation:pop .8s cubic-bezier(.2,1.4,.4,1)}
+#sp h1{font-size:clamp(34px,7vw,58px);margin:18px 0 6px;letter-spacing:-.02em}
+.tl{font-size:clamp(18px,3vw,26px);display:flex;gap:14px}.tl span{opacity:0;animation:fu .7s forwards}.tl span:nth-child(1){color:#5eead4;animation-delay:.5s}.tl span:nth-child(2){color:#93c5fd;animation-delay:1.1s}.tl span:nth-child(3){color:#bef264;animation-delay:1.7s}
+#sp p{max-width:480px;color:#a9b8d6;opacity:0;animation:fu .7s 2.2s forwards}.ld{width:220px;height:4px;background:#ffffff25;border-radius:9px;margin:22px 0;overflow:hidden}.ld i{display:block;height:100%;background:linear-gradient(90deg,#0d9488,#84cc16);animation:ld 2.6s ease-out forwards}
+#sp .bt{opacity:0;animation:fu .7s 2.6s forwards;display:flex;gap:10px;flex-wrap:wrap;justify-content:center}#sp .btn{padding:11px 20px;font-weight:600;background:#ffffff18;color:#fff;border-color:#ffffff40}#sp .btn.p{background:var(--blue)}
+@keyframes pop{from{transform:scale(.3) rotate(-20deg);opacity:0}}@keyframes fu{from{opacity:0;transform:translateY(14px)}to{opacity:1}}@keyframes ld{from{width:0}to{width:100%}}
+.kb{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.kc{background:var(--bg);border-radius:12px;padding:10px;min-height:120px}.kt{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:9px;margin-top:8px;font-size:13px}.kt div{display:flex;justify-content:space-between;margin-top:6px}.kt button{all:unset;cursor:pointer;color:var(--blue);padding:0 6px}
+.st{display:flex;gap:6px;flex-wrap:wrap}.sg{flex:1;min-width:90px;padding:9px;border-radius:10px;border:1px solid var(--bd);background:var(--card);cursor:pointer;font:inherit;color:var(--tx);text-align:left}.sg.on{background:var(--blue);color:#fff}.sg.dn2{border-color:var(--teal)}
+.in2{width:100%;font:inherit;color:var(--tx);background:var(--bg);border:1px solid var(--bd);border-radius:9px;padding:8px;margin:4px 0}
+.tc{display:inline-block;background:var(--bg);border:1px solid var(--bd);border-radius:99px;padding:2px 9px;margin:2px;font-size:12px}
+#ts{position:fixed;bottom:20px;left:50%;transform:translate(-50%,80px);background:var(--nav);color:#fff;padding:10px 18px;border-radius:12px;transition:transform .3s;z-index:50}#ts.o{transform:translate(-50%,0)}
+.cmp{display:grid;grid-template-columns:90px 1fr 1fr;gap:8px;align-items:center;margin:10px 0}
+</style></head><body>
+<div id="sp"><div class="lg">◆</div><h1>SustainIQ</h1><div class="tl"><span>See.</span><span>Solve.</span><span>Sustain.</span></div><div class="ld"><i></i></div><p>Continuous improvement and operational excellence for consultants and operations leaders. <span class="sim">Prototype · simulated data</span></p><div class="bt" style="margin-top:20px"><button class="btn p" onclick="enter(0)">Enter SustainIQ</button><button class="btn" onclick="enter(1)">▶ Start the Improvement Journey</button></div></div>
+<div id="ts"></div>
+<aside id="sb"></aside>
+<main>
+<header>
+ <button class="btn" id="tg" title="Collapse sidebar">☰</button>
+ <select id="org"><option>Apex Manufacturing</option><option>Northfield Plastics</option><option>Meridian Foods</option></select>
+ <select id="cl"><option>All facilities</option><option>Plant A</option><option>Plant B</option></select>
+ <select id="per"><option value="6">Last 6 months</option><option value="3">Last 3 months</option></select>
+ <input id="q" placeholder="Search initiatives, owners…">
+ <span class="sp"></span>
+ <button class="btn p" id="qa">+ Quick action</button>
+ <button class="btn bell" id="bl">🔔<b>3</b></button>
+ <div class="av">HM</div>
+ <div class="cd" id="nt"><h3>Notifications</h3><div class="mu">Corrective action CA-114 is overdue</div><hr><div class="mu">Audit AU-27 scheduled for Friday</div><hr><div class="mu">Approval pending: Changeover SMED project</div></div>
+</header>
+<div class="wrap" id="v"></div>
+</main>
+<div id="so"></div>
+<script>
+const $=s=>document.querySelector(s);
+const NAV=[["◎","Executive Overview"],["▶","Improvement Journey"],["g","See"],["👁","Operational Assessment","see"],["⇄","Process Mapping","see"],["g","Solve"],["🔍","Root Cause Analysis","sol"],["▤","Improvement Projects","sol"],["✓","Action Management","sol"],["g","Sustain"],["📘","Standard Work","sus"],["📈","Performance Monitoring","sus"],["g","Intelligence"],["◫","KPI & Analytics"],["👥","Leadership & Coaching"],["⚖","ISO & Quality"],["✦","AI Improvement Assistant"],["▦","Reports & Insights"],["🏢","Clients & Organizations"]];
+let cur="Executive Overview",flt="All",qq="",sortK=null,mult=1;
+function nav(){$("#sb").innerHTML=`<div class="logo"><i>◆</i><span class="lb">SustainIQ</span></div>`+NAV.map(n=>n[0]=="g"?`<div class="grp">${n[1]}</div>`:`<button class="nv ${cur==n[1]?"on":""}" data-n="${n[1]}"><span class="${n[2]||""}">${n[0]}</span><span class="lb">${n[1]}</span></button>`).join("");
+document.querySelectorAll(".nv").forEach(b=>b.onclick=()=>{cur=b.dataset.n;nav();render()})}
+const mon=["Jun","Jul","Aug","Sep","Oct","Nov"];
+const series={Actual:[71,72,74,77,81,84],Target:[85,85,85,85,85,85],Quality:[88,89,91,92,94,95],Productivity:[66,68,70,73,76,79]};
+const kpis=[["Active Improvement Projects",14,"",12,"vs 12",[9,10,11,12,13,14],"▤"],["Operational Efficiency",84,"%",6.3,"vs 79%",series.Actual,"⚡"],["Cost Savings Achieved",1.42,"M",18,"vs $1.2M",[.5,.7,.9,1.1,1.25,1.42],"$"],["Open Opportunities",37,"",-8,"vs 40",[44,43,42,41,40,37],"💡"],["Process Compliance",91,"%",3.1,"vs 88%",[84,86,87,88,90,91],"✓"],["Sustainability Score",78,"",5.4,"vs 74",[62,66,70,74,76,78],"♻"]];
+const projects=[["P-101","Changeover Reduction (SMED)","Production","A. Rahman",68,85,79,"$320K","On Track"],["P-102","First-Pass Yield Recovery","Quality","L. Chen",91,96,94,"$210K","On Track"],["P-103","Material Availability Control","Supply Chain","M. Okafor",74,90,76,"$180K","At Risk"],["P-104","Standard Work Rollout","Assembly","S. Patel",70,88,88,"$95K","Completed"],["P-105","Cycle Time Compression","Packaging","D. Novak",48,39,46,"$140K","Delayed"],["P-106","Preventive Maintenance Plan","Maintenance","R. Silva",82,92,86,"$275K","On Track"]];
+const stc={"On Track":"ok","At Risk":"wn","Delayed":"rk","Completed":"in"};
+function count(el,to,dec,suf){const t=matchMedia("(prefers-reduced-motion:reduce)").matches?1:0;let s=null;const f=ts=>{s=s||ts;const p=t?1:Math.min((ts-s)/900,1);el.textContent=(to*(1-Math.pow(1-p,3))).toFixed(dec)+suf;if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}
+function spark(a,c){const mx=Math.max(...a),mn=Math.min(...a),w=110,h=30;const p=a.map((v,i)=>`${i*w/(a.length-1)},${h-(v-mn)/(mx-mn||1)*(h-4)-2}`).join(" ");return`<svg width="${w}" height="${h}"><polyline fill="none" stroke="${c}" stroke-width="2" points="${p}"/></svg>`}
+function chart(n){const W=640,H=250,L=34,B=24,keys=Object.keys(series),col={Actual:"#2563eb",Target:"#94a3b8",Quality:"#0d9488",Productivity:"#84cc16"};const x=i=>L+i*(W-L-10)/(n-1),y=v=>H-B-(v-60)/(100-60)*(H-B-10);
+let g="";for(let v=60;v<=100;v+=10)g+=`<line x1="${L}" x2="${W}" y1="${y(v)}" y2="${y(v)}" stroke="var(--bd)"/><text x="2" y="${y(v)+3}">${v}</text>`;
+const ms=mon.slice(6-n);ms.forEach((m,i)=>g+=`<text x="${x(i)-8}" y="${H-6}">${m}</text>`);
+keys.forEach(k=>{const d=series[k].slice(6-n).map((v,i)=>`${x(i)},${y(v)}`).join(" ");g+=`<polyline fill="none" stroke="${col[k]}" stroke-width="${k=="Actual"?3:2}" ${k=="Target"?'stroke-dasharray="5 4"':""} points="${d}" style="stroke-dasharray:${k=="Target"?"5 4":"1200"};animation:dr 1.2s ease-out"/>`;g+=series[k].slice(6-n).map((v,i)=>`<circle cx="${x(i)}" cy="${y(v)}" r="9" fill="transparent"><title>${k} ${ms[i]}: ${v}%</title></circle>`).join("")});
+return`<style>@keyframes dr{from{stroke-dashoffset:1200}}</style><svg viewBox="0 0 ${W} ${H}" width="100%">${g}</svg><div class="mu">`+keys.map(k=>`<span style="color:${col[k]}">●</span> ${k} &nbsp;`).join("")+`</div>`}
+function toast(t){const e=$("#ts");e.textContent=t;e.classList.add("o");setTimeout(()=>e.classList.remove("o"),2000)}
+function enter(j){$("#sp").classList.add("x");if(j){cur="Improvement Journey";jst=0;nav();render()}}
+let why=["Production cycle time rose from 39 to 48 min","Changeovers take too long","Tooling is not staged","No standard changeover sequence",""],jst=0,dm=3,jdone=false;
+let kb=[["Map current-state flow",0],["Define SMED scope",0],["Train operators on new instructions",1],["Install material kitting",1],["Verify changeover standard",2],["Baseline data collected",3]];
+const KC=["Planned","In Progress","Under Review","Completed"],DM=["Define","Measure","Analyze","Improve","Control"];
+const FB={Manpower:["Unclear work instructions"],Methods:["Slow changeover sequence"],Machines:[],Materials:["Inconsistent availability"],Measurement:["Inadequate process monitoring"],Environment:[]};
+function mv(i,d){const j=kb[i][1]+d;if(j>=0&&j<4){kb[i][1]=j;toast("Moved to "+KC[j]);render()}}
+function addC(k){const e=$("#fb"+k);if(e.value.trim()){FB[k].push(e.value.trim());toast("Cause added to "+k);render()}}
+function wh(i,x){why[i]=x;$("#rc").textContent=why.slice(1).filter(Boolean).slice(-1)[0]||"Enter your whys…"}
+function go(d){jst=Math.max(0,Math.min(3,jst+d));if(jst==3)jdone=true;render()}
+const par=[["Changeover delay",38],["Material shortage",26],["Unclear instructions",18],["Rework",12],["Other",6]];
+const bf=(l,a,b)=>`<div class="cmp"><b>${l}</b><div><div class="mu">Before ${a}</div><div class="bar"><i style="width:${a>60?a:a*1.6}%;background:var(--red)"></i></div></div><div><div class="mu">After ${b}</div><div class="bar"><i style="width:${b>60?b:b*1.6}%"></i></div></div></div>`;
+const MOD={
+"Root Cause Analysis":()=>`<div class="bc">SustainIQ / Solve · <span class="sim">Simulated</span></div><h1>Solve – Find the Root Cause</h1><div class="mu">Move beyond symptoms to the underlying causes.</div>
+<div class="grid g2" style="margin-top:14px"><div class="cd"><h3>5 Whys Analysis</h3>${why.map((w,i)=>`<label class="mu">${i?"Why "+i:"Problem statement"}</label><input class="in2" value="${w}" oninput="wh(${i},this.value)">`).join("")}<div class="ai" style="margin-top:10px"><small>Candidate root cause · requires verification</small><div id="rc">${why.slice(1).filter(Boolean).slice(-1)[0]||"Enter your whys…"}</div></div><button class="btn p" onclick="toast('Investigation saved (demo)')">Save investigation</button></div>
+<div class="cd"><h3>Pareto – Delay causes</h3>${par.map((p,i)=>`<div style="margin:8px 0"><div class="kl"><span>${p[0]}</span><span>${p[1]}% · cum ${par.slice(0,i+1).reduce((s,x)=>s+x[1],0)}%</span></div><div class="bar" style="height:12px"><i style="width:${p[1]*2.4}%"></i></div></div>`).join("")}<div class="mu">Top two causes account for 64% of delay.</div></div></div>
+<div class="cd" style="margin-top:14px"><h3>Fishbone (Ishikawa) – click to add causes</h3><div class="grid g3">${Object.keys(FB).map(k=>`<div class="cd"><b>${k}</b><div style="margin:6px 0">${FB[k].map(c=>`<span class="tc">${c}</span>`).join("")||'<span class="mu">No causes yet</span>'}</div><input class="in2" id="fb${k}" placeholder="Add a cause…"><button class="btn" onclick="addC('${k}')">+ Add</button></div>`).join("")}</div></div>`,
+"Improvement Projects":()=>`<div class="bc">SustainIQ / Solve · <span class="sim">Simulated</span></div><h1>Improvement Projects</h1><div class="mu">P-101 Changeover Reduction (SMED) · Apex Manufacturing</div>
+<div class="cd" style="margin:14px 0"><h3>DMAIC journey (click a phase)</h3><div class="st">${DM.map((d,i)=>`<button class="sg ${i==dm?"on":i<dm?"dn2":""}" onclick="dm=${i};toast('Phase: ${d}');render()"><b>${i<dm?"✓ ":""}${d}</b><div style="font-size:11px">${i<dm?100:i==dm?60:0}% complete</div></button>`).join("")}</div></div>
+<div class="kb">${KC.map((c,ci)=>`<div class="kc"><b>${c}</b> <span class="mu">${kb.filter(t=>t[1]==ci).length}</span>${kb.map((t,i)=>t[1]==ci?`<div class="kt">${t[0]}<div><button onclick="mv(${i},-1)">‹</button><button onclick="mv(${i},1)">›</button></div></div>`:"").join("")}</div>`).join("")}</div>
+<div class="cd" style="margin-top:14px"><h3>Financial benefits</h3><div class="kl"><span>Projected</span><span>$320K</span></div><div class="bar"><i style="width:100%"></i></div><div class="kl" style="margin-top:8px"><span>Verified to date</span><span>$212K</span></div><div class="bar"><i style="width:66%"></i></div></div>`,
+"Improvement Journey":()=>{const S=["SEE","SOLVE","SUSTAIN","SUMMARY"];const c=[`<h3>Apex Manufacturing – current state</h3><ul><li>Production efficiency below target (72% vs 85%)</li><li>Cycle time rising (48 min)</li><li>Repeated quality issues (91% first-pass yield)</li><li>Material-related production delays</li></ul>`,`<h3>Root cause investigation</h3><p>Contributing factors: <span class="tc">Unclear work instructions</span><span class="tc">Changeover delays</span><span class="tc">Inconsistent material availability</span><span class="tc">Inadequate monitoring</span></p><button class="btn p" onclick="jdone2=1;toast('Corrective action plan created');render()">${window.jdone2?"✓ Action plan created":"Create corrective action plan"}</button><p class="mu">Owners: A. Rahman (changeover), M. Okafor (materials), L. Chen (quality)</p>`,`<h3>Illustrative results (simulated)</h3>${bf("Efficiency",72,86)}${bf("Cycle time",48,39)}${bf("First-pass yield",91,96)}<span class="tc">Updated standard work</span><span class="tc">Supervisor verification</span><span class="tc">Recurring audits</span><span class="tc">Management review</span>`,`<h3>From Operational Problems to Sustainable Performance</h3><p>✓ 4 problems → 4 root causes investigated → 6 actions implemented</p><p>Efficiency 72→86% · Cycle 48→39 min · FPY 91→96%</p><p class="mu">Outstanding risk: material variability. Sustainability plan: 30/60/90-day reviews and monthly audits.</p><div class="bar" style="height:14px"><i style="width:100%"></i></div>`];
+return`<div class="bc"><span class="sim">All data on this screen is simulated demo data</span></div><h1>The Improvement Journey</h1><div class="mu">From identifying operational problems to measurable, sustainable improvement.</div><div class="st" style="margin:14px 0">${S.map((s,i)=>`<button class="sg ${i==jst?"on":i<jst?"dn2":""}" onclick="jst=${i};render()"><b>${i<jst?"✓ ":""}${s}</b></button>`).join("")}</div><div class="cd" style="min-height:220px">${c[jst]}</div><div style="margin-top:12px;display:flex;gap:8px"><button class="btn" onclick="go(-1)">← Back</button><button class="btn p" onclick="go(1)">${jst==3?"Journey complete ✓":"Next →"}</button></div>`}};
+function render(){const v=$("#v");if(MOD[cur]){v.innerHTML=MOD[cur]();return}
+if(cur!="Executive Overview"){v.innerHTML=`<div class="bc">SustainIQ / ${cur}</div><h1>${cur}</h1><div class="cd" style="margin-top:14px;max-width:560px"><div class="sk"></div><p>This module is next in the build order. The Executive Overview is the first completed screen.</p><button class="btn p" onclick="cur='Executive Overview';nav();render()">Back to Overview</button></div>`;return}
+const n=+$("#per").value;const rows=projects.filter(p=>(flt=="All"||p[8]==flt)&&(p.join(" ").toLowerCase().includes(qq)));
+if(sortK!==null)rows.sort((a,b)=>a[sortK]>b[sortK]?1:-1);
+v.innerHTML=`<div class="bc">SustainIQ / Executive Overview · <span class="sim">Simulated demo data</span></div>
+<h1>Welcome back, Hormoz</h1><div class="mu">${$("#org").value} · ${$("#cl").value} · ${n==6?"Jun–Nov 2026":"Sep–Nov 2026"}</div>
+<div class="grid k6" style="margin:16px 0">${kpis.map((k,i)=>`<div class="cd h"><div class="kl"><span>${k[0]}</span><span>${k[6]}</span></div><div class="kv" id="kv${i}">0</div><div class="${k[3]>0?(i==3?"dn":"up"):(i==3?"up":"dn")}">${k[3]>0?"▲":"▼"} ${Math.abs(k[3])}% <span class="mu">${k[4]}</span></div>${spark(k[5],"#0d9488")}</div>`).join("")}</div>
+<div class="grid g2"><div class="cd"><h3>Operational Performance <span class="sim">Simulated</span></h3>${chart(n)}</div>
+<div class="grid" style="grid-template-columns:1fr">
+<div class="cd sss s1 h"><h3>SEE · Understand</h3><ul><li>Assessments completed<b>12</b></li><li>Opportunities identified<b>37</b></li><li>Processes analyzed<b>23</b></li></ul></div>
+<div class="cd sss s2 h"><h3>SOLVE · Root cause</h3><ul><li>Active initiatives<b>14</b></li><li>Root cause investigations<b>9</b></li><li>Corrective actions in progress<b>21</b></li></ul></div>
+<div class="cd sss s3 h"><h3>SUSTAIN · Maintain</h3><ul><li>Standard procedures live<b>46</b></li><li>Audits completed<b>31</b></li><li>Improvements maintained<b>78%</b></li></ul></div></div></div>
+<div class="cd" style="margin-top:14px"><h3>Improvement Portfolio <span>${["All","On Track","At Risk","Delayed","Completed"].map(s=>`<button class="chip ${flt==s?"on":""}" data-f="${s}">${s}</button>`).join(" ")}</span></h3>
+<div class="ov"><table><tr>${["Initiative","Department","Owner","Baseline","Target","Current","Impact","Status"].map((h,i)=>`<th data-s="${[1,2,3,4,5,6,7,8][i]}">${h} ↕</th>`).join("")}</tr>
+${rows.map(p=>`<tr class="r" data-id="${p[0]}"><td><b>${p[1]}</b></td><td>${p[2]}</td><td>${p[3]}</td><td>${p[4]}</td><td>${p[5]}</td><td><div>${p[6]}</div><div class="bar"><i style="width:${Math.min(100,Math.abs((p[6]-p[4])/(p[5]-p[4])*100))}%"></i></div></td><td>${p[7]}</td><td><span class="pill ${stc[p[8]]}">${p[8]}</span></td></tr>`).join("")||`<tr><td colspan="8" class="mu">No initiatives match your filters.</td></tr>`}</table></div></div>
+<div class="grid g3" style="margin-top:14px">
+<div class="cd"><h3>Attention Required</h3>${[["rk","3 overdue corrective actions"],["wn","2 processes below target"],["in","4 pending management approvals"],["ok","Process audit due Friday"]].map(a=>`<div class="fi"><span class="pill ${a[0]}">●</span>${a[1]}</div>`).join("")}</div>
+<div class="cd"><h3>SustainIQ Intelligence</h3>${["Packaging cycle time has risen for 3 consecutive weeks.","Two initiatives (P-103, P-105) need management attention.","Assembly has held its improvement for three months."].map(t=>`<div class="ai"><small>✦ AI-generated suggestion · needs human review</small><div>${t}</div></div>`).join("")}</div>
+<div class="cd"><h3>Recent Activity</h3>${[["#0d9488","Plant A assessment completed","2h ago"],["#84cc16","SOP-212 verified by supervisor","5h ago"],["#2563eb","P-101 milestone: Measure phase signed off","Yesterday"],["#f59e0b","Audit AU-27 rescheduled","2 days ago"]].map(a=>`<div class="fi"><span class="dot" style="background:${a[0]}"></span><div>${a[1]}<div class="mu">${a[2]}</div></div></div>`).join("")}</div></div>`;
+kpis.forEach((k,i)=>count($("#kv"+i),k[1]*(k[2]=="M"?mult:1),k[2]=="M"?2:0,k[2]=="M"?"M":k[2]));
+document.querySelectorAll("[data-f]").forEach(b=>b.onclick=()=>{flt=b.dataset.f;render()});
+document.querySelectorAll("th[data-s]").forEach(h=>h.onclick=()=>{sortK=+h.dataset.s;render()});
+document.querySelectorAll("tr.r").forEach(r=>r.onclick=()=>{const p=projects.find(x=>x[0]==r.dataset.id);$("#so").innerHTML=`<button class="btn" onclick="$('#so').classList.remove('o')">✕ Close</button><h2>${p[1]}</h2><span class="pill ${stc[p[8]]}">${p[8]}</span> <span class="sim">Simulated</span><p class="mu">${p[0]} · ${p[2]} · Owner ${p[3]}</p><div class="cd"><div class="kl"><span>Baseline → Target</span><span>${p[4]} → ${p[5]}</span></div><div class="kv">${p[6]}</div><div class="mu">Financial impact (estimated): ${p[7]}</div></div><p>DMAIC stage: ${["Improve","Control","Analyze","Control","Measure","Improve"][projects.indexOf(p)]}</p><div class="ai"><small>✦ AI suggestion · not verified</small><div>Review changeover standard work and material kitting before the next milestone.</div></div>`;$("#so").classList.add("o")})}
+$("#tg").onclick=()=>$("#sb").classList.toggle("c");
+$("#bl").onclick=()=>$("#nt").classList.toggle("o");
+$("#qa").onclick=()=>{cur="Improvement Projects";nav();render()};
+$("#q").oninput=e=>{qq=e.target.value.toLowerCase();if(cur=="Executive Overview")render()};
+$("#per").onchange=render;
+$("#org").onchange=e=>{mult=[1,.6,.8][e.target.selectedIndex];render()};
+$("#cl").onchange=render;
+nav();render();
+</script></body></html>
